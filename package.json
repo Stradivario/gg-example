@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start": "npx gj",
+    "watch": "npx gj --config ./gj.yml --watch"
+  },
+  "dependencies": {
+    "@rxdi/graphqj": "0.7.15"
+  },
+  "devDependencies": {
+    "@types/graphql": "14.2.3",
+    "typescript": "3.5.3"
+  }
+}
