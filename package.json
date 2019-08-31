@@ -1,10 +1,9 @@
 {
   "scripts": {
-    "start": "npx gj",
-    "watch": "npx gj --config ./gj.yml --watch"
+    "start": "./node_modules/.bin/gj --client --hot-reload"
   },
   "dependencies": {
-    "@rxdi/graphqj": "0.7.15"
+    "@rxdi/graphqj": "0.7.34"
   },
   "devDependencies": {
     "@types/graphql": "14.2.3",

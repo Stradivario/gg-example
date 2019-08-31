@@ -43,13 +43,30 @@ $resolvers:
     type: User
     args:
       payload: UserPayload
-    resolve:
-      name: Kristiyan Tachev
-      email: test@gmail.com
-      phone: 414141
-      arrayOfNumbers: 
-        - 515152
-        - 412414
-      arrayOfStrings:
-        - '515151'
-        - '412414'
+    resolve: !!js/function >
+      function foobar(root, payload, context, info) {
+        return {
+          "name": "22233",
+          "email": "22",
+          "phone": 2223
+        }
+      }
+
+$views:
+  app:
+    components:
+     - http://0.0.0.0:9000/components/hamburger.component.js
+    html: 💉./views/app.html
+
+  home:
+    query: findUser
+    props: User
+    output: UserPayload
+    html: 💉./views/home.html
+
+  not-found:
+    html: 💉./views/not-found.html
+
+  about:
+    html: |
+      Welcome from About
