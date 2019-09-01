@@ -3,10 +3,10 @@
     "start": "./node_modules/.bin/gj --client --hot-reload"
   },
   "dependencies": {
-    "@rxdi/graphqj": "0.7.34"
+    "@rxdi/graphqj": "0.7.36"
   },
   "devDependencies": {
-    "@types/graphql": "14.2.3",
-    "typescript": "3.5.3"
+    "@types/graphql": "14.5.0",
+    "typescript": "3.6.2"
   }
 }
